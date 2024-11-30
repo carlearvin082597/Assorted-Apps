@@ -53,13 +53,18 @@ h2 {
 }
 
 .fa-chevron-left,
-.fa-chevron-right,
-.random-btn {
+.fa-chevron-right {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
+    background-color: white;
+    color: #9191d8;
+    margin: 0;
+    border-bottom: 0;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 25px;    
 }
 
 .prev-btn,
@@ -70,14 +75,24 @@ h2 {
 .prev-btn:hover,
 .next-btn:hover {
     background-color: aquamarine;
+    border: 2px solid #9191d8;
+
 } 
 
 .random-btn {
     position: relative;
     align-content: center;
-    border: 2px solid #7c7cdb;
+    margin-top: 5px;
+    border-style: none;
+    border: 2px solid #19f5f5;
     border-radius: 5px;
     padding: 5px;
+    cursor: pointer;
+}
+
+.random-btn:hover {
+    background-color: #222;
+    color: #fff;
 }
 
 #author {
