@@ -23,9 +23,9 @@ body {
     padding: 2rem;
     margin-top: 25px;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 650px;
     width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
@@ -110,6 +110,15 @@ h2 {
 
 img {
     height: 150px;
-    border-radius: 70%;
+    border-radius: 100px;
     margin: 25px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+#person-img {
+  border-top: 7px solid #7f84d4;
+  border-right: 7px solid #7f84d4;
 }
