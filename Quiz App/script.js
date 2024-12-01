@@ -151,11 +151,10 @@ submitBtn.addEventListener("click", () => {
         if(currentQuiz < quizData.length){
             loadQuiz();
         } else {
-            alert(`You answered correctly at 
-                ${score}/${quizData.length} questions.`);
+            alert(`You got ${score} out of ${quizData.length}.`);
                 quiz.innerHTML = 
                     `<h2>You just finnish the quiz, 
-                    dahil dyan bigyan ng snowbear yan!</h2> 
+                    you want to repeat? Just click the button below!</h2> 
                     
                     <button onclick="location.reload()"
                     >Reload</button>`;
