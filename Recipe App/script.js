@@ -1,11 +1,15 @@
-function getRandomMeal() {
+getRandomMeal();
+async function getRandomMeal() {
+    const RandomMeal = await fetch('www.themealdb.com/api/json/v1/1/random.php');
 
+    console.log(RandomMeal);
+    
 }
 
-function getMealById(id) {
-
+async function getMealById(id) {
+    const meal = await fetch('www.themealdb.com/api/json/v1/1/lookup.php?i=' + id);
 }
 
-function getMealsBySearch(term) {
-
+async function getMealsBySearch(term) {
+    const meals = await fetch('www.themealdb.com/api/json/v1/1/search.php?s=' + id);
 }
