@@ -80,7 +80,7 @@ class Calculator {
         if(this.operation != null) {
             this.previousOperandTextElement.innerText = 
             `${this.previousOperand} ${this.operation}`
-        } else {
+        } else {    
             this.previousOperandTextElement.innerText = ''
         }
        
