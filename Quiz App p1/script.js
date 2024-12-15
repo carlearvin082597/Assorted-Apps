@@ -57,7 +57,7 @@ function selectAnswer(e) {
     if (shuffleQuestions.lenght > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = 'Restart'
+        startButton.innerText = 'Next'
         startButton.classList.remove('hide')
     }
     
@@ -79,28 +79,48 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: 'What is 2 + 2?',
+        question: 'What is the capital of France?',
         answers: [
-            { text: '4', correct: true },
-            { text: '23', correct: false}
+            { text: 'Paris', correct: true },
+            { text: 'London', correct: false },
+            { text: 'Rome', correct: false },
+            { text: 'Berlin', correct: false }
         ]
     },
-    
     {
-        question: 'What is 3 * 3?',
+        question: 'What is 5 + 7?',
         answers: [
-            { text: '23', correct: false },
-            { text: '9', correct: true }
+            { text: '12', correct: true },
+            { text: '10', correct: false },
+            { text: '14', correct: false },
+            { text: '9', correct: false }
         ]
     },
-
     {
-        question: 'What is 4 * 4?',
+        question: 'Which planet is known as the Red Planet?',
         answers: [
-            { text: '24', correct: false },
-            { text: '16', correct: true},
-            { text: '90', correct: false },
-            { text: '55', correct: false}
+            { text: 'Mars', correct: true },
+            { text: 'Venus', correct: false },
+            { text: 'Jupiter', correct: false },
+            { text: 'Saturn', correct: false }
+        ]
+    },
+    {
+        question: 'What is the square root of 64?',
+        answers: [
+            { text: '8', correct: true },
+            { text: '6', correct: false },
+            { text: '10', correct: false },
+            { text: '7', correct: false }
+        ]
+    },
+    {
+        question: 'Who wrote "Hamlet"?',
+        answers: [
+            { text: 'William Shakespeare', correct: true },
+            { text: 'Charles Dickens', correct: false },
+            { text: 'Mark Twain', correct: false },
+            { text: 'Jane Austen', correct: false }
         ]
     }
-]
+];
